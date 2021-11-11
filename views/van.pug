@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  - let vans = [{vanType:"Delivery Van", vanPrice: 100000, vanColor:"White"},{vanType:"Travel Van", vanPrice: 50000, vanColor:"Yellow"},{vanType:"Passenger Van", vanPrice: 30000, vanColor:"Grey"}]
+  - let vans = results;
   div(class="container-fluid mt-3")
   div(class="row")
     each van,index in vans
