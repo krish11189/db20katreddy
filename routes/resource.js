@@ -27,3 +27,13 @@ router.get('/vans/:id', van_controller.van_detail);
 // GET request for list of all van items.
 router.get('/vans', van_controller.van_view_all_Page);
 module.exports = router;
+
+
+
+router.get('/detail', van_controller.van_view_one_Page); 
+
+router.get('/create', van_controller.van_create_Page); 
+
+router.get('/update',van_controller.van_update_Page);
+
+router.get('/delete', van_controller.van_delete_Page);
